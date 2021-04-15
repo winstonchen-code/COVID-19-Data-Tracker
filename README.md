@@ -1,12 +1,12 @@
-# Wander Plus App 
+# Covid-19 Data Tracker App 
 
 ## INSPIRATION
 
-An app that came out of the desire to travel while stuck at home during quarantine. We wanted to create an application so that we can plan our next post pandemic trip.  
+An app that displays the most up-to-date Covid-19 statistics.
 
 ## WHAT IT DOES
 
-Mindful Meditation is an online app that helps people of all ages to relax by timed breathing training. Anyone can access it through a simple click and start meditating.
+Covid-19 Data Tracker is an online app that helps people of all ages to relax by timed breathing training. Anyone can access it through a simple click and start meditating.
 
 ## WHAT'S NEXT
 
