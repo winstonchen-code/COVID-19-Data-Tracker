@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './LogInElements';
+import {Container, FormWrap, Icon, FormContent, Form, FormLabel, FormInput, FormButton, Text } from './LogInElements';
 // import { Link as LinkR } from 'react-router-dom'
 import { useHistory } from "react-router-dom"
 

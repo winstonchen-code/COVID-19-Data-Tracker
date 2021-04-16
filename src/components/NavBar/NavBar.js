@@ -1,6 +1,4 @@
-import { emphasize } from '@material-ui/core';
 import React, { useState} from 'react'
-import {FaBars} from 'react-icons/fa'
 import styled from "styled-components"
 
 const Navbar = () => {
