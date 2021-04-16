@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <Nav>
-            <Logo href="/home">COVID-19 Data Tracker</Logo>
+            <Logo href="/">COVID-19 Data Tracker</Logo>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
             <span/>
             <span/>
@@ -28,7 +28,7 @@ const Nav = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: black;
+    background: #0077B6;
 `;
 
 const Hamburger = styled.div`
