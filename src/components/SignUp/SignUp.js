@@ -11,7 +11,6 @@ const Profile = ({setUser, setFootageLogs}) => {
         password: "",
     })
 
-    const [errors, setErrors] = useState([])
     const history = useHistory()
 
     function handleChange(e) {
@@ -19,35 +18,7 @@ const Profile = ({setUser, setFootageLogs}) => {
     }
 
     function handleSubmit(e) {
-        e.preventDefault();
-        fetch("http://localhost:3000/signup", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
-            .then(r => r.json().then(data => {
-                if (r.ok) {
-                    return data
-                } else {
-                    throw data
-                }
-            }))
-            .then((data) => {
-                // console.log(user)
-                // if (data.errors) {
-                //     setErrors(data.errors);
-                // } else {
-                    const { user, token } = data;
-                    localStorage.setItem("token", token);
-                    setUser(user);
-                    setFootageLogs(user.footage_logs);
-                    history.push("/profile");
-            })
-            .catch(error => {
-                setErrors(error.errors)
-            })
+            history.push("/tracker");
     }
 
     const { name, email, password} = formData;
@@ -66,7 +37,6 @@ const Profile = ({setUser, setFootageLogs}) => {
                             <FormInput type='email' required placeholder="email" name="email" value={email} onChange={handleChange}/>
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='password' required placeholder="password" name="password" value={password} onChange={handleChange}/>
-                            {errors.map(error => <p style={{color: "red" }} key={error}>{error}</p>)}
                             <FormButton type='submit'>Create Account</FormButton>
                         </Form>
                     </FormContent>

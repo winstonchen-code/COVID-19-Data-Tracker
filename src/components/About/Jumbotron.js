@@ -23,6 +23,7 @@ const Section = styled.section`
 
 const Container = styled.div`
     // padding: 3rem calc((100vw - 1300px) /2);
+    padding-top: 100px; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 800px;
@@ -35,7 +36,7 @@ const ColumnLeft = styled.div`
     display: flex;
     text-align: center;
     flex-direction: column;
-    line-height: 1.4;
+    line-height: 0;
     padding: 2rem 4rem;
     order: ${({reverse}) => (reverse? '2' : '1')};
 

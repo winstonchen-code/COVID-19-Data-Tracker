@@ -26,7 +26,7 @@ const Nav = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: #0077B6;
+    background: black;
 `;
 
 const Hamburger = styled.div`
