@@ -19,36 +19,7 @@ const LogIn = ( {setUser, setFootageLogs} ) => {
     }
 
     function handleSubmit(e) {
-        e.preventDefault();
-        fetch("http://localhost:3000/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
-            .then(r => r.json().then(data => {
-                if (r.ok) {
-                    return data
-                } else {
-                    throw data
-                }
-            }))
-            .then((data) => {
-                // console.log(user)
-                // if (data.errors) {
-                //     setErrors(data.errors);
-                // } else {
-                    const { user, token } = data;
-                    localStorage.setItem("token", token);
-                    setUser(user);
-                    setFootageLogs(user.footage_logs);
-                    history.push("/footagelogs");
-            })
-            .catch(error => {
-                setErrors(error.errors)
-            })
-            
+        history.push("/tracker");
     }
 
     return (
