@@ -21,5 +21,11 @@ COVID-19 Data Tracker is an online app designed to give you the latest statistic
 
 I plan to build out more features of the application so that individuals can access articles and videos that discusses COVID-19. After adding these features, I want to promote the platform to users seeking more info on COVID-19, so that it can benefit individuals across the globe, and reduce the surge in cases. 
 
+## PREVIEW
+
+<img width="1879" alt="preview" src="https://user-images.githubusercontent.com/72679784/115167177-84daef80-a084-11eb-9884-12544305c4f9.png">
+
+[DEMO](https://covid-19-statistics-info.netlify.app/)
+
 ### Built by 
 * [Winston Chen](https://www.linkedin.com/in/winston-c/)
