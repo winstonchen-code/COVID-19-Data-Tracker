@@ -10,12 +10,10 @@ After 12 months where the world has faced a tsunami of suffering, the arrival of
 
 ## TOOLS
 
-1. React Hook
-2. Ruby
-3. Rails API
-4. Javascript
-5. Material UI
-6. CSS
+1. React
+2. Javascript
+3. Material UI
+4. CSS
 
 ## WHAT IT DOES
 
